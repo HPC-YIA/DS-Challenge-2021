@@ -167,10 +167,13 @@ y_min = y_test.min()
 r = y_max - y_min
 rmse_norm = rmse / r
 
+# R-Squared
+r_2 = metrics.r2_score(y_test, y_pred)
+
 print("Linear Regression metrics:")
 print("MAE: ", mae)
 print("MSE: ", mse)
 print("RMSE: ", rmse)
 print("RMSE (Normalised): ", rmse_norm)
-
+print("R^2: ", r_2)
 
